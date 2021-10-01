@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body {
+  background-color: #f5f6fa;
+
+}
+
+.app {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  background-image: url('./covid.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+
+}
+
+.app_header > h1 {
+  color: #fc3c3c;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.app_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.app_left {
+  flex: 0.7;
+}
+
+.app_status {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app_right {
+  display: flex;
+  flex-direction: column;
+}
+
+.MuiOutlinedInput-root {
+  position: relative;
+  border-radius: 4px;
+  background-color: wheat;
+}
+
+.app_right .MuiCardContent-root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.app_graph {
+  flex-grow: 1;
+}
+
+@media all and (max-width: 360px) {
+ 
+  .MuiFormControl-root.app_dropdown {
+    width: 155px;
+  }
+  .app_header > h1 {
+    color: #fc3c3c;
+    font-size: 10px;
+    font-weight: 700;
+  }
+  .MuiPaper-root.MuiCard-root.app_right.MuiPaper-elevation1.MuiPaper-rounded {
+    margin-top: 10px;
+  }
+  .app_status {
+    display: flex;
+    flex-direction: column;
+  }
+  .MuiPaper-root.MuiCard-root.infoBox.infoBox_selected.infoBox_red.MuiPaper-elevation1.MuiPaper-rounded {
+  margin-bottom: 10px;
+  }
+  .MuiPaper-root.MuiCard-root.infoBox.false.undefined.MuiPaper-elevation1.MuiPaper-rounded {
+  margin-bottom: 10px;
+  }
+  .MuiPaper-root.MuiCard-root.infoBox.false.infoBox_red.MuiPaper-elevation1.MuiPaper-rounded {
+  max-width: 300px;
+  width: auto;
+  }
+  }
+  
+
+@media all and (max-width: 990px) {
+  .app {
+    flex-direction: column;
+  }
+
+}
+
+@media all and (max-width: 430px) {
+ 
+.MuiFormControl-root.app_dropdown {
+  width: 155px;
+}
+.app_header > h1 {
+  color: #fc3c3c;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.MuiPaper-root.MuiCard-root.app_right.MuiPaper-elevation1.MuiPaper-rounded {
+  margin-top: 10px;
+}
+.MuiPaper-root.MuiCard-root.app_right.MuiPaper-elevation1.MuiPaper-rounded {
+  width: 385px;
+  margin-left: 0px;
+}
+}
+
+
+@media all and (max-width: 768px) {
+  .app_header > h1 {
+    color: #fc3c3c;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.MuiFormControl-root.app_dropdown {
+  width: 225px;
+}
+.MuiPaper-root.MuiCard-root.app_right.MuiPaper-elevation1.MuiPaper-rounded {
+  margin-top: 10px;
+}
+}
+
+
+@media all and (max-width: 1366px) {
+  .app_header > h1 {
+    color: #fc3c3c;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.MuiFormControl-root.app_dropdown {
+  width: 150px;
+}
+.MuiPaper-root.MuiCard-root.app_right.MuiPaper-elevation1.MuiPaper-rounded {
+  /* margin: 10px; */
+  width: auto;
+}
+}
+
+
+
+
